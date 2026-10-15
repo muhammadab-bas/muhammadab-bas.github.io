@@ -5,9 +5,9 @@ window.PROFILE = {
   role: "BS Botany Graduate",
   institution: "University of Swat · Pakistan",
   location: "Pakistan",
-  portrait: "",           // Example: "assets/images/portrait.jpg"
-  email: "",              // Your public professional email
-  cvFile: "",             // Example: "files/academic-cv.pdf" after adding the PDF
+  portrait: "",
+  email: "",
+  cvFile: "",
   cvUpdated: "",
   linkedin: "",
   orcid: "",
