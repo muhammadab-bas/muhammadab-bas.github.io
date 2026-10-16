@@ -5,7 +5,7 @@ window.PROFILE = {
   role: "BS Botany Graduate (Gold Medalist)",
   institution: "University of Swat · Pakistan",
   location: "Swat, Pakistan",
-  portrait: "DP Photo.jpg",
+  portrait: "portrait.jpg",
   email: "mabbas55225@gmail.com",
   cvFile: "Muhammad_Abbas_CV (PSU-Bio).pdf",
   cvUpdated: "2026-12",
