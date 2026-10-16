@@ -2,9 +2,9 @@
    Add only details you intend to make public when publishing. */
 window.PROFILE = {
   name: "Muhammad Abbas",
-  role: "BS Botany Graduate",
+  role: "BS Botany Graduate (Gold Medalist)",
   institution: "University of Swat · Pakistan",
-  location: "Pakistan",
+  location: "Swat, Pakistan",
   portrait: "",
   email: "mabbas55225@gmail.com",
   cvFile: "",
