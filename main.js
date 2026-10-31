@@ -72,3 +72,44 @@ if (nav && menu) {
 window.PORTFOLIO_UI = { hydrateProfile, refreshNavigation, closeMenu };
 hydrateProfile();
 refreshNavigation();
+function wireContactForm() {
+  const form = document.getElementById('contact-form');
+  if (!form) return;
+  const email = ((window.PROFILE && window.PROFILE.email) || 'mabbas55225@gmail.com').trim();
+  const submitButton = form.querySelector('button[type="submit"]');
+
+  const setBusy = (busy) => {
+    if (!submitButton) return;
+    submitButton.disabled = busy;
+    submitButton.textContent = busy ? 'Opening mail app…' : 'Send message';
+  };
+
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+    const name = (formData.get('name') || '').toString().trim();
+    const senderEmail = (formData.get('email') || '').toString().trim();
+    const subject = (formData.get('subject') || '').toString().trim() || 'Website inquiry';
+    const message = (formData.get('message') || '').toString().trim();
+
+    if (!name || !senderEmail || !message) {
+      alert('Please complete your name, email, and message before sending.');
+      return;
+    }
+
+    setBusy(true);
+    const fullBody = `Name: ${name}\nEmail: ${senderEmail}\n\n${message}`;
+    const mailtoUrl = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(fullBody);
+    window.location.href = mailtoUrl;
+    setTimeout(() => {
+      form.reset();
+      setBusy(false);
+    }, 250);
+  });
+}
+
+window.PORTFOLIO_UI = { hydrateProfile, refreshNavigation, closeMenu, wireContactForm };
+hydrateProfile();
+refreshNavigation();
+wireContactForm();
