@@ -8,7 +8,7 @@ window.PROFILE = {
   emailIsExample: false,
   portrait: "assets/images/dp-photo_02.jpg",
   portraitAlt: "Muhammad Abbas, plant scientist and BS Botany graduate from University of Swat",
-  portraitCaption: "Plant sciences researcher • University of Swat",
+  portraitCaption: "Aspiring Plant Scientist",
   cvFile: "files/Muhammad_Abbas_CV.pdf",
   draftMode: false,
   links: {
