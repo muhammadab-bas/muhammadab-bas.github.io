@@ -110,7 +110,7 @@
         if (matches) shown++;
       });
       $$('.course-group').forEach(group => { group.hidden = !$$('.course-item', group).some(node => !node.hidden); });
-      $('[data-course-count]').textContent = `${shown} of ${courseCards.length} draft course entries`;
+      $('[data-course-count]').textContent = `${shown} of ${courseCards.length} course entries`;
       $('[data-course-empty]').hidden = shown !== 0;
     };
     search.addEventListener('input', filter);
