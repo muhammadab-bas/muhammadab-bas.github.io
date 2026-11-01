@@ -1,3 +1,2 @@
 User-agent: *
 Allow: /
-# Review all sample content before enabling indexing.
