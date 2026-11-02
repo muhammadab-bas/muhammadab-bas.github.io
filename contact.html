@@ -1,99 +1,639 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact &amp; Scholarly Profiles | Muhammad Abbas</title><meta name="description" content="Contact information, a local message-drafting form, and labelled example scholarly profile slots for Muhammad Abbas."><meta name="author" content="Muhammad Abbas"><meta name="robots" content="index,follow"><meta name="theme-color" content="#354638"><meta property="og:type" content="website"><meta property="og:title" content="Contact &amp; Scholarly Profiles | Muhammad Abbas"><meta property="og:description" content="Contact information, a local message-drafting form, and labelled example scholarly profile slots for Muhammad Abbas."><link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/css/style.css"><script src="assets/js/profile.js" defer></script><script src="assets/js/main.js" defer></script></head><body><div id="top"></div><a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header"><div class="wrap header-inner">
-<a class="brand" href="index.html" aria-label="Muhammad Abbas, home"><span class="brand-mark" aria-hidden="true">MA</span><span><span class="brand-name" data-profile="name">Muhammad Abbas</span><span class="brand-discipline">Plant sciences · Research · Possibility</span></span></a>
-<button class="menu-toggle" data-menu-toggle aria-controls="main-navigation" aria-expanded="false" hidden><span>Menu</span><b aria-hidden="true">☰</b></button>
-<nav class="nav" id="main-navigation" aria-label="Main navigation">
-<a href="index.html">Home</a><a href="about.html">About Me</a>
-<a href="cv.html">CV</a>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact &amp; Scholarly Profiles | Muhammad Abbas</title>
+  <meta name="description" content="Contact information, a local message-drafting form, and labelled example scholarly profile slots for Muhammad Abbas.">
+  <meta name="author" content="Muhammad Abbas">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#354638">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact &amp; Scholarly Profiles | Muhammad Abbas">
+  <meta property="og:description" content="Contact information, a local message-drafting form, and labelled example scholarly profile slots for Muhammad Abbas.">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/profile.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 
-<a href="research.html">Research</a>
+  <style>
+    :root{
+      --forest:#354638;
+      --forest-deep:#1f2e26;
+      --sage:#64755d;
+      --paper:#f8f6f2;
+      --cream:#f3efe8;
+      --ink:#21352d;
+      --muted:#5e6e63;
+      --line:rgba(53,70,56,0.12);
+      --panel:#ffffff;
+      --soft:#f6f4f0;
+    }
 
-<a href="contact.html" aria-current="page">Contact</a></nav>
-</div>
-</header>
-</div>
-<main id="main" tabindex="-1"><section class="page-intro"><div class="wrap">
-<h1>Let’s connect.</h1>
-<p class="">I am currently open to conversations about funded MS/PhD opportunities in plant sciences, particularly plant stress physiology, pathology, and molecular plant biology. If you are a faculty member, admissions coordinator, or fellow researcher, I would love to connect.</p>
-</div>
-</section>
-<section class="section wrap contact-grid"><div class="contact-information"><h2 data-profile="contact">Contact</h2>
-<p> The best way to get in touch is to send me an email. Please feel free to contact me at <a href="mailto:mabbas55225@gmail.com" style="color: #0077cc; text-decoration: none;"><strong>mabbas55225@gmail.com</strong></a> for research opportunities, collaboration, or academic discussion.</p>
-<p> You can also use the form to send me a message directly.</p>
-<div class="contact-actions"></span></button></div>
-<p class="inline-notice" data-copy-notice role="status"></p>
-</div>
-<div><form class="contact-form" id="contact-draft" action="https://formspree.io/f/mdeavjbz" method="POST"><h2>Send Me a Message</h2>
-<div class="form-grid"><div class="form-field"><label for="sender-name">Full Name *</label><input id="sender-name" name="name" autocomplete="name" required maxlength="120" placeholder="Your name"></div>
-<div class="form-field"><label for="sender-email">Email Address *</label><input id="sender-email" name="email" type="email" autocomplete="email" required maxlength="200" placeholder="your.email@example.com"></div>
-<div class="form-field full"><label for="message-subject">Subject of Inquiry *</label><input id="message-subject" name="subject" required maxlength="160" placeholder="e.g., Research collaboration"></div>
-<div class="form-field full"><label for="message-body">Message *</label><textarea id="message-body" name="message" required maxlength="5000" rows="6" placeholder="Write your message here..."></textarea></div>
-</div>
-<button class="button primary" type="submit">SEND<span aria-hidden="true">→</span></button><p id="contact-status" role="status" aria-live="polite"></p></form>
-<section class="message-result" data-message-result hidden aria-labelledby="draft-title"><h3 id="draft-title">Your message draft</h3>
-<p data-message-status role="status"></p>
-<label class="small" for="message-preview">Review your draft</label><textarea id="message-preview" data-message-preview readonly></textarea><div class="button-row"><button class="button compact" type="button" data-copy-message>Copy draft</button><a class="button primary compact" href="#contact-draft" data-open-email hidden>Open email app ↗</a></div>
-</section>
-</div>
-</section>
+    body{
+      background: var(--paper);
+      color: var(--ink);
+    }
 
-<section class="section social-section" id="profiles"><div class="wrap"><div class="section-head"><div><p class="eyebrow">Find me Across the Web</p>
-<h2>Profiles &amp; connections</h2>
-</div>
-</div>
-<div class="social-grid"><!-- Google Scholar --><a class="social-card" href="https://scholar.google.com/citations?user=pm6mqRMAAAAJ&hl=en&inst=4887157489608331491" target="_blank" rel="noopener noreferrer" data-social="scholar" aria-label="Google Scholar profile"><span class="social-symbol" aria-hidden="true">GS</span><span class="social-name">Google Scholar</span><span class="social-state">Citations &amp; publications ↗</span></a><!-- ORCID --><a class="social-card" href="https://orcid.org/0009-0003-1665-7509" target="_blank" rel="noopener noreferrer" data-social="orcid" aria-label="ORCID record"><span class="social-symbol" aria-hidden="true">iD</span><span class="social-name">ORCID</span><span class="social-state">Research identifier ↗</span></a><!-- LinkedIn --><a class="social-card" href="https://www.linkedin.com/in/mr-muhammad-abbas/" target="_blank" rel="noopener noreferrer" data-social="linkedin" aria-label="LinkedIn profile"><span class="social-symbol" aria-hidden="true">in</span><span class="social-name">LinkedIn</span><span class="social-state">in/mr-muhammad-abbas ↗</span></a><!-- X (Twitter) --><a class="social-card" href="https://x.com/iMr_Abbas" target="_blank" rel="noopener noreferrer" data-social="x" aria-label="X profile"><span class="social-symbol" aria-hidden="true">X</span><span class="social-name">X</span><span class="social-state">@iMr_Abbas ↗</span></a><!-- Bluesky --><a class="social-card" href="https://bsky.app/profile/muhammad-abbas.bsky.social" target="_blank" rel="noopener noreferrer" data-social="bluesky" aria-label="Bluesky profile"><span class="social-symbol" aria-hidden="true">B</span><span class="social-name">Bluesky</span><span class="social-state">muhammad-abbas.bsky.social ↗</span></a></div>
+    .page-intro{
+      padding: 40px 0 18px;
+      background: linear-gradient(180deg, #f3efe8 0%, #f8f6f2 100%);
+      border-bottom: 1px solid var(--line);
+    }
 
-</div>
-</section>
-</main>
-<footer class="footer"><div class="wrap"><div class="footer-top"><div><a href="index.html" class="footer-name" data-profile="name">Muhammad Abbas</a><p>Curious about plants. Committed to learning.</p>
-</div>
-<nav class="footer-links" aria-label="Footer navigation"><a href="about.html">About</a><a href="cv.html">Academic CV</a><a href="courses.html">Courses</a><a href="research.html">Research</a><a href="contact.html">Contact</a></nav>
-</div>
-<div class="footer-bottom"><p>© <span data-year>2026</span> Muhammad Abbas · Swat, Pakistan</p>
-<div><a class="back-to-top" href="#top">Back to top ↑</a></div>
-</div>
-</div>
-</footer>
-<noscript><p class="no-js">All pages and native dropdowns work without JavaScript. Search, profile customisation, and the compact phone menu require JavaScript.</p>
-<style>.nav{display:flex!important}.menu-toggle{display:none!important}details.entry-details>div{display:block}</style></noscript><script>
-(() => {
-  const form = document.getElementById("contact-draft");
-  const status = document.getElementById("contact-status");
-  const button = form.querySelector('button[type="submit"]');
+    .page-intro .wrap{
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
 
-  form.addEventListener("submit", async (event) => {
-    event.preventDefault();
+    .page-intro h1{
+      margin: 10px 0 0;
+      font-size: clamp(2.4rem, 4.8vw, 4rem);
+      line-height: 1.08;
+      letter-spacing: -0.05em;
+      color: var(--forest-deep);
+    }
 
-    if (button.disabled) return;
+    .page-intro p{
+      max-width: 760px;
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 1.02rem;
+      line-height: 1.8;
+    }
 
-    button.disabled = true;
-    status.textContent = "Sending your message…";
+    .contact-wrap{
+      max-width: 1200px;
+      margin: 30px auto 72px;
+      padding: 0 24px;
+    }
 
-    try {
-      const response = await fetch(form.action, {
-        method: "POST",
-        body: new FormData(form),
-        headers: {
-          "Accept": "application/json"
+    .contact-grid{
+      display: grid;
+      grid-template-columns: 0.92fr 1.2fr;
+      gap: 26px;
+      align-items: start;
+    }
+
+    .panel{
+      background: rgba(255,255,255,0.75);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: 0 12px 28px rgba(35,53,45,0.04);
+    }
+
+    .info-panel{
+      padding: 24px 22px;
+    }
+
+    .info-panel h2{
+      margin: 0 0 12px;
+      color: var(--forest-deep);
+      font-size: clamp(1.8rem, 3vw, 2.2rem);
+      letter-spacing: -0.04em;
+    }
+
+    .info-panel p{
+      margin: 0 0 18px;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .info-list{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .info-list li{
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 12px;
+      border-radius: 14px;
+      background: var(--soft);
+      border: 1px solid rgba(53,70,56,0.08);
+    }
+
+    .info-badge{
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      background: rgba(53,70,56,0.08);
+      color: var(--forest);
+      font-size: 0.72rem;
+      font-weight: 800;
+    }
+
+    .info-list strong{
+      display: block;
+      margin-bottom: 4px;
+      color: var(--forest);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .info-list span{
+      color: var(--ink);
+      line-height: 1.5;
+    }
+
+    .small-links{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .small-links a{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid var(--line);
+      color: var(--forest);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .form-panel{
+      padding: 24px 22px;
+    }
+
+    .form-panel h2{
+      margin: 0 0 16px;
+      color: var(--forest-deep);
+      font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+      letter-spacing: -0.04em;
+    }
+
+    .contact-form{
+      display: grid;
+      gap: 18px;
+    }
+
+    .form-grid{
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .form-field{
+      display: grid;
+      gap: 8px;
+    }
+
+    .form-field.full{
+      grid-column: 1 / -1;
+    }
+
+    .form-field label{
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--forest);
+      font-weight: 700;
+    }
+
+    .form-field input,
+    .form-field textarea{
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 13px 14px;
+      background: #faf9f6;
+      color: var(--ink);
+      font: inherit;
+      resize: vertical;
+    }
+
+    .form-field input:focus,
+    .form-field textarea:focus{
+      outline: none;
+      border-color: rgba(53,70,56,0.4);
+      background: #fff;
+      box-shadow: 0 0 0 4px rgba(53,70,56,0.04);
+    }
+
+    .form-field textarea{
+      min-height: 150px;
+    }
+
+    .button-row{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      margin-top: 2px;
+    }
+
+    .button{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      border: 1px solid var(--forest);
+      background: var(--forest);
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .button:hover{
+      transform: translateY(-1px);
+      box-shadow: 0 10px 20px rgba(53,70,56,0.12);
+    }
+
+    .button.compact{
+      padding: 10px 14px;
+      font-size: 0.9rem;
+    }
+
+    .message-result{
+      margin-top: 20px;
+      padding: 16px 16px 14px;
+      background: #f7f4ee;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+    }
+
+    .message-result h3{
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      color: var(--forest-deep);
+    }
+
+    .message-result p{
+      margin: 0 0 12px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    #message-preview{
+      width: 100%;
+      min-height: 120px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+      color: var(--ink);
+      padding: 12px 14px;
+      resize: vertical;
+      font: inherit;
+      line-height: 1.6;
+    }
+
+    #contact-status{
+      margin: 0;
+      min-height: 24px;
+      color: var(--forest);
+      font-weight: 700;
+    }
+
+    .profiles-wrap{
+      max-width: 1200px;
+      margin: 0 auto 80px;
+      padding: 0 24px;
+    }
+
+    .profiles-head{
+      margin: 0 0 16px;
+    }
+
+    .profiles-head h2{
+      margin: 0;
+      font-size: clamp(1.9rem, 3vw, 2.5rem);
+      color: var(--forest-deep);
+      letter-spacing: -0.04em;
+    }
+
+    .social-grid{
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .social-card{
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: var(--ink);
+      background: rgba(255,255,255,0.72);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 18px 16px 16px;
+      min-height: 150px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .social-card:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 16px 28px rgba(35,53,45,0.05);
+      border-color: rgba(53,70,56,0.22);
+    }
+
+    .social-icon{
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      background: rgba(53,70,56,0.08);
+      color: var(--forest);
+      margin-bottom: 14px;
+    }
+
+    .social-name{
+      font-weight: 700;
+      color: var(--forest-deep);
+      margin-bottom: 10px;
+    }
+
+    .social-state{
+      margin-top: auto;
+      color: var(--forest);
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 980px){
+      .contact-grid{
+        grid-template-columns: 1fr;
+      }
+
+      .social-grid{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 620px){
+      .page-intro .wrap,
+      .contact-wrap,
+      .profiles-wrap{
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      .form-grid,
+      .social-grid{
+        grid-template-columns: 1fr;
+      }
+
+      .button-row{
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .button{
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="top"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Muhammad Abbas, home">
+        <span class="brand-mark" aria-hidden="true">MA</span>
+        <span>
+          <span class="brand-name" data-profile="name">Muhammad Abbas</span>
+          <span class="brand-discipline">Plant sciences · Research · Possibility</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" data-menu-toggle aria-controls="main-navigation" aria-expanded="false" hidden>
+        <span>Menu</span>
+        <b aria-hidden="true">☰</b>
+      </button>
+
+      <nav class="nav" id="main-navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="cv.html">CV</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="page-intro">
+      <div class="wrap">
+        <h1>Let’s connect.</h1>
+        <p>
+          I am currently open to conversations about funded MS/PhD opportunities in plant sciences,
+          particularly plant stress physiology, pathology, and molecular plant biology.
+          If you are a faculty member, admissions coordinator, or fellow researcher,
+          I would love to connect.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-wrap">
+      <div class="contact-grid">
+        <aside class="panel info-panel">
+          <h2>Academic inquiries, collaborations, and opportunities</h2>
+          <p>
+            For research opportunities, collaboration, and academic conversations,
+            the fastest and most professional way to reach me is by email.
+          </p>
+
+          <ul class="info-list">
+            <li>
+              <span class="info-badge">EM</span>
+              <div>
+                <strong>Email</strong>
+                <span><a href="mailto:mabbas55225@gmail.com">mabbas55225@gmail.com</a></span>
+              </div>
+            </li>
+
+            <li>
+              <span class="info-badge">LO</span>
+              <div>
+                <strong>Location</strong>
+                <span>Swat, Khyber Pakhtunkhwa, Pakistan</span>
+              </div>
+            </li>
+
+            <li>
+              <span class="info-badge">AR</span>
+              <div>
+                <strong>Research</strong>
+                <span>Plant stress physiology, crop resilience, and plant health</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="small-links">
+            <a href="mailto:mabbas55225@gmail.com">Email me</a>
+            <a href="cv.html">View CV</a>
+            <a href="research.html">Research</a>
+          </div>
+        </aside>
+
+        <div class="panel form-panel">
+          <h2>Send Me a Message</h2>
+
+          <form class="contact-form" id="contact-draft" action="https://formspree.io/f/mdeavjbz" method="POST">
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="sender-name">Full Name *</label>
+                <input id="sender-name" name="name" autocomplete="name" required maxlength="120" placeholder="Your name">
+              </div>
+
+              <div class="form-field">
+                <label for="sender-email">Email Address *</label>
+                <input id="sender-email" name="email" type="email" autocomplete="email" required maxlength="200" placeholder="your.email@example.com">
+              </div>
+
+              <div class="form-field full">
+                <label for="message-subject">Subject of Inquiry *</label>
+                <input id="message-subject" name="subject" required maxlength="160" placeholder="e.g., Research collaboration">
+              </div>
+
+              <div class="form-field full">
+                <label for="message-body">Message *</label>
+                <textarea id="message-body" name="message" required maxlength="5000" rows="6" placeholder="Write your message here..."></textarea>
+              </div>
+            </div>
+
+            <div class="button-row">
+              <button class="button" type="submit">SEND <span aria-hidden="true">→</span></button>
+            </div>
+
+            <p id="contact-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <section class="message-result" data-message-result hidden aria-labelledby="draft-title">
+            <h3 id="draft-title">Your message draft</h3>
+            <p data-message-status role="status"></p>
+
+            <label class="small" for="message-preview">Review your draft</label>
+            <textarea id="message-preview" data-message-preview readonly></textarea>
+
+            <div class="button-row">
+              <button class="button compact" type="button" data-copy-message>Copy draft</button>
+              <a class="button compact" href="mailto:mabbas55225@gmail.com" data-open-email hidden>Open email</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="profiles-wrap">
+      <div class="profiles-head">
+        <h2>Profiles &amp; connections</h2>
+      </div>
+
+      <div class="social-grid">
+        <a class="social-card" href="https://scholar.google.com/citations?user=pm6mqRMAAAAJ&hl=en&inst=4887157489608331491" target="_blank" rel="noopener noreferrer">
+          <span class="social-icon" aria-hidden="true">GS</span>
+          <span class="social-name">Google Scholar</span>
+          <span class="social-state">View profile ↗</span>
+        </a>
+
+        <a class="social-card" href="https://www.linkedin.com/in/mr-muhammad-abbas/" target="_blank" rel="noopener noreferrer">
+          <span class="social-icon" aria-hidden="true">LI</span>
+          <span class="social-name">LinkedIn</span>
+          <span class="social-state">View profile ↗</span>
+        </a>
+
+        <a class="social-card" href="https://orcid.org/0009-0003-1665-7509" target="_blank" rel="noopener noreferrer">
+          <span class="social-icon" aria-hidden="true">OR</span>
+          <span class="social-name">ORCID</span>
+          <span class="social-state">View profile ↗</span>
+        </a>
+
+        <a class="social-card" href="https://github.com/muhammadab-bas" target="_blank" rel="noopener noreferrer">
+          <span class="social-icon" aria-hidden="true">GH</span>
+          <span class="social-name">GitHub</span>
+          <span class="social-state">View profile ↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="footer-name" data-profile="name">Muhammad Abbas</a>
+          <p>Curious about plants. Committed to learning.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="about.html">About</a>
+          <a href="cv.html">Academic CV</a>
+          <a href="courses.html">Courses</a>
+          <a href="research.html">Research</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Muhammad Abbas · Swat, Pakistan</p>
+        <div><a class="back-to-top" href="#top">Back to top ↑</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <noscript>
+    <p class="no-js">All pages and native dropdowns work without JavaScript. Search, profile customisation, and the compact phone menu require JavaScript.</p>
+    <style>.nav{display:flex!important}.menu-toggle{display:none!important}details.entry-details>div{display:block}</style>
+  </noscript>
+
+  <script>
+    (() => {
+      const form = document.getElementById("contact-draft");
+      const status = document.getElementById("contact-status");
+      const button = form.querySelector('button[type="submit"]');
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        if (button.disabled) return;
+
+        button.disabled = true;
+        status.textContent = "Sending your message…";
+
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: new FormData(form),
+            headers: {
+              "Accept": "application/json"
+            }
+          });
+
+          if (response.ok) {
+            status.textContent = "Thank you! Your message has been sent.";
+            form.reset();
+          } else {
+            status.textContent = "Your message could not be sent. Please try again or email me directly.";
+          }
+        } catch (error) {
+          status.textContent = "We could not confirm whether your message was sent. Please check your connection or email me directly.";
+        } finally {
+          button.disabled = false;
         }
       });
-
-      if (response.ok) {
-        status.textContent =
-          "Thank you! Your message has been sent.";
-        form.reset();
-      } else {
-        status.textContent =
-          "Your message could not be sent. Please try again or email me directly.";
-      }
-    } catch (error) {
-      status.textContent =
-        "We could not confirm whether your message was sent. Please check your connection or email me directly.";
-    } finally {
-      button.disabled = false;
-    }
-  });
-})();
-</script></body></html>
+    })();
+  </script>
+</body>
+</html>
