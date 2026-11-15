@@ -9,7 +9,7 @@ window.PROFILE = {
   portrait: "assets/images/dp-photo_02.jpg",
   portraitAlt: "Muhammad Abbas, plant scientist and BS Botany graduate from University of Swat",
   portraitCaption: "Aspiring Plant Scientist",
-  cvFile: "files/Abbas_Muhammad_CV_13_11_2026.pdf",
+  cvFile: "files/Abbas_Muhammad_CV_15_11_2026.pdf",
   draftMode: false,
   links: {
     scholar: "https://scholar.google.com/citations?user=pm6mqRMAAAAJ&hl=en&inst=4887157489608331491",
